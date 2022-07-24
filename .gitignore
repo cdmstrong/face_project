@@ -1,0 +1,10 @@
+*.md
+*.mp4
+!*.txt
+!*.jpg
+!requirements*
+!Dockerfile*
+!*.sh
+/video
+data
+trainner
