@@ -1,0 +1,1 @@
+pyuic5 -o mainUI.py face.ui 

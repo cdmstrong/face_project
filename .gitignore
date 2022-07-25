@@ -1,4 +1,3 @@
-*.md
 *.mp4
 !*.txt
 !*.jpg
@@ -6,5 +5,5 @@
 !Dockerfile*
 !*.sh
 /video
-data
-trainner
+data/user.*/
+trainner/*
