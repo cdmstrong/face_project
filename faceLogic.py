@@ -30,7 +30,7 @@ class FaceLogic(object):
         self.face_ids = []
         self.face_arr = []
         # 人脸名字
-        self.face_names = ["cc", "MM"]
+        self.face_names = ["unknow"]
         self.face_name = None
         # 数据路径
         self.data_path = DATA_PATH
@@ -93,7 +93,9 @@ class FaceLogic(object):
         self.face_ids.append(self.face_id)
     # 获取人脸数据，默认八百张图片，实验可到最好效果
     def check_face(self, face_name):
-        if face_name is None or face_name in self.face_names:
+        
+        if face_name == "" or face_name in self.face_names:
             return False
+        self.face_names.append(face_name)
         return self.face_id
     
